@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog Boxes</title>
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <h1>Dialog Boxes</h1>
+    <h2>There are three types of Dialog Boxes</h2>
+    <ol>
+        <li><code>alert("Your message goes here.")</code> <button  onclick="alertBtn()">Alert</button> </li>
+        <li><code>confirm("Your message goes here.")</code> <button onclick="confirmBtn()">Confirm Btn</button> </li>
+        <li><code>prompt("Your message goes here.")</code> <button onclick="promptBtn()">Prompt</button> </li>
+    </ol>
+    <script>
+         function alertBtn() {   
+            alert("It is an Alert dialog box");   
+        }   
+
+        function confirmBtn() {   
+            let con = confirm ("It is a Confirm dialog box");   
+            if(con == true) {   
+                document.write ("User Want to continue");   
+            }    
+            else {   
+                document.write ("User does not want to continue");   
+            }   
+        }   
+
+        function promptBtn() {   
+            let value = prompt("Enter your Name : ", "Enter your name");   
+            document.write("Your Name is : " + value);   
+        }  
+
+    </script>
+</body>
+</html>
