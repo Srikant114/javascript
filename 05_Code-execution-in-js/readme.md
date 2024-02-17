@@ -6,8 +6,8 @@ JavaScript is a synchronous (Moves to the next line only when the execution of t
 - Everything in JavaScript is wrapped inside Execution Context, which is an abstract concept (can be treated as a container) that holds the whole information about the environment within which the current JavaScript code is being executed.
 
 - Now, an Execution Context has two components and JavaScript code gets executed in two phases.
-
- - Memory Allocation Phase: 
+ 
+##### Memory Allocation Phase: 
  In this phase, all the functions and variables of the JavaScript code get stored as a key-value pair inside the memory component of the execution context. In the case of a function, JavaScript copied the whole function into the memory block but in the case of variables, it assigns undefined as a placeholder.
- - Code Execution Phase: 
+##### Code Execution Phase: 
  In this phase, the JavaScript code is executed one line at a time inside the Code Component (also known as the Thread of execution) of Execution Context. 
